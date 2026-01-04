@@ -17,22 +17,22 @@ public class Testcase1 {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         WebDriver driver = new ChromeDriver(options);
-        System.out.println("Test started executing!...........................");
+        System.out.println("Test started executing!...............1............");
         driver.get("https://www.google.com");
-        System.out.println("Test execution completed!...........................");
+        System.out.println("Test execution completed!..............1.............");
         driver.get("https://www.google.com");
         assertTrue(true);
     }
 
     @Test(testName = "Second testcase")
     public void printResultInConsole() {
-        System.out.println("===== TEST EXECUTION STARTED =====");
+        System.out.println("===== TEST EXECUTION STARTED ==2===");
         int a = 10;
         int b = 20;
         int sum = a + b;
         System.out.println("Sum of numbers is: " + sum);
 
-        System.out.println("===== TEST EXECUTION COMPLETED =====");
+        System.out.println("===== TEST EXECUTION COMPLETED ==2===");
 
         Assert.assertEquals(sum, 30);
     }
